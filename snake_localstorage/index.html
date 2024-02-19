@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Snake</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+	<div id="mainWrapper">
+		<div id="setNameWrapper">
+			<div>
+				<label class="setNameLabel">Podaj imię: </label>
+				<input class="setName" type="text" maxlength="18" />
+			</div>
+			<p class="logo">Witamy w grze Snake!</p>
+		</div>
+		<div id="snakeWrapper">
+			<div id="info">
+				<p>Po kliknięciu w przycisk "Rozpocznij grę!", należy rozpcząć grę poprzez wciśnięcie klawisza Enter
+					<br />
+					Do sterowania wężem służą strzałki.<br />
+					Pauze włączamy poprzez wciśnięcie klawisza spacji, a wznowienie gry następuje przy użycia klawisza
+					enter.<br />
+				</p>
+				<button id="start">Rozpocznij grę!</button>
+			</div>
+			<div id="area">
+				<div id="enterToStart">Enter = Start</div>
+				<div id="pauza">Pauza</div>
+				<div class="snakeBody" id="snakeHead">
+					<div id="eyesWrapper">
+						<div class="eyes"></div>
+						<div class="eyes"></div>
+					</div>
+					<div id="mouth"></div>
+				</div>
+			</div>
+			<div id="scoreBox">Punkty: <strong>0</strong></div>
+			<div id="gameOver">
+				<p>Koniec gry!</p>
+				<span>Sprawdź poprawność imienia.</span>
+				<button id="saveButton" type="submit">Zapisz wynik</button>
+			</div>
+			<div id="level">
+				<p>Wybierz poziom</p>
+				<select id="kindOfLevel">
+					<option>Wybierz poziom</option>
+					<option>Bardzo łatwy</option>
+					<option>Łatwy</option>
+					<option>Średni</option>
+					<option>Dość trudny</option>
+					<option>Trudny</option>
+					<option>Bardzo trudny</option>
+					<option>Prawie nie wykonalny :)</option>
+					<option>Nie wykonalny :)</option>
+				</select>
+				<button id="saveLevel" type="submit">Start</button>
+			</div>
+		</div>
+		<div id="historyWrapper">
+			<h1>Historia wyników:</h1>
+			<div id="historyContent"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
