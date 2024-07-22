@@ -1,7 +1,7 @@
 <h1>Goals when creating the game:</h1>
 <ul>
 <li>The first goal was to use only HTML, CSS and JavaScript - without any additional tools.</li>
-<li>The second goal was to write JavaScript code that works solely on the basis of functions cooperating with each other - without classes.</li>
+<li>The second goal was to write JavaScript code that worked solely on functions that worked together - without classes.</li>
 </ul>
 <h1>Use:</h1>
 <ul>
