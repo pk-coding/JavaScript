@@ -9,6 +9,8 @@
 <li>There is no responsiveness implemented, so you should open the screen at least 14 inches.</li>
 <li>The results are saved in the browser's local storage.</li>
 </ul>
+<img width="957" alt="snake_localstorage" src="https://github.com/user-attachments/assets/c228911d-1f2e-4f33-b338-3fa6c5b91a53">
+
 <h1>Author:</h1>
 <ul>
 <li>Email: <em>ekontakt@wp.pl</em></li>
