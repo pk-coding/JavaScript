@@ -1,6 +1,6 @@
 <h1>Goals when creating the game:</h1>
 <ul>
-<li>ymyślone przeze mnie zadanie dla zabawy :)</li>
+<li>A task I created for fun :)</li>
 <li>And of course to practice JavaScript :)</li>
 <li>Script for the task of calculating a mathematical operation entered in words, and then displaying the correct result of the entered operation.</li>
 </ul>
@@ -14,9 +14,7 @@
 
 <li>Press "Calculate" button, and see the result.</li>
 <img width="953" alt="function_calculating_verbal_actions_3" src="https://github.com/user-attachments/assets/00484fc6-b0b4-4a66-b58e-758e37655e39">
-
 </ul>
-<img width="957" alt="snake_localstorage" src="https://github.com/user-attachments/assets/c228911d-1f2e-4f33-b338-3fa6c5b91a53">
 
 <h1>Author:</h1>
 <ul>
