@@ -12,7 +12,7 @@
 <li>In the future, when I have time I will add, among other things, a try and catch structure and I will try to enclose some loops in functions/methods built into Java Script.</li>
 <li>Each function displays the effect of processing the entered data in the console - you can analyze it yourself.</li>
   <br/>
-
+<img width="960" alt="refactoring_function_calculating_verbal_actions_1" src="https://github.com/user-attachments/assets/03c8e3ca-b69f-4e11-93a6-94c9e1235e09" />
 </ul>
 
 <h1>Author:</h1>
