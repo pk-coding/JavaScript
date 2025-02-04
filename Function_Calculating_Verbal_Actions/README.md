@@ -3,9 +3,11 @@
 <li>A task I created for fun :)</li>
 <li>And of course to practice JavaScript :)</li>
 <li>Script for the task of calculating a mathematical operation entered in words, and then displaying the correct result of the entered operation.</li>
+<li>I encourage you to test and report any errors :)</li>
 </ul>
 <h1>Use:</h1>
 <ul>
+<li>Use only for Polish language.</li>
 <li>All you need to do is download the index.html, index.js and style.css files into one directory and then open the index.html file in your browser.</li>
   <br/>
   <img width="956" alt="function_calculating_verbal_actions_1" src="https://github.com/user-attachments/assets/a66b36eb-6cea-4c4e-af17-ca950e83e44b">
