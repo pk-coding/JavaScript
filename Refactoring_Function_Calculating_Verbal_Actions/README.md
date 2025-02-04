@@ -9,6 +9,7 @@
 <li>Usage described at https://github.com/pk-coding/JavaScript/tree/main/Function_Calculating_Verbal_Actions</li>
 <li>After refactoring the whole process is managed by the main() function with the pipline applied.</li>
 <li>I split one big function into a series of small ones that are much easier to understand and test, and the whole code is more flexible.</li>
+<li>Removing global variables.</li>
 <li>In the future, when I have time I will add, among other things, a try and catch structure and I will try to enclose some loops in functions/methods built into Java Script.</li>
 <li>Each function displays the effect of processing the entered data in the console - you can analyze it yourself.</li>
   <br/>
