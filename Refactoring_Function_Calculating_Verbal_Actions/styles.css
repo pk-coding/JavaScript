@@ -1,0 +1,67 @@
+#wrapper {
+  padding: 30px;
+  border: solid 2px blueviolet;
+}
+
+#buttonsWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#inputText {
+  width: 99%;
+  padding: 5px;
+  font-size: 20px;
+  background-color: bisque;
+  border-color: rgb(183, 116, 34);
+  transform: 0.5s;
+}
+
+#inputText:hover {
+  background-color: beige;
+  cursor: text;
+}
+
+#buttonPolicz,
+#buttonResetuj {
+  padding: 5px;
+  width: 30%;
+  background-color: rgb(92, 200, 106);
+  border-color: rgb(7, 119, 22);
+  font-size: 20px;
+  transform: 0.5s;
+}
+
+#buttonPolicz:hover {
+  cursor: help;
+  background-color: rgb(172, 244, 181);
+  transform: scale(0.95);
+}
+
+#buttonResetuj:hover {
+  cursor: pointer;
+  background-color: rgb(172, 244, 181);
+  transform: scale(0.95);
+}
+
+p {
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  font-size: 40px;
+  color: blueviolet;
+}
+
+label {
+  color: rgb(102, 0, 255);
+  font-size: 24px;
+  font-weight: 1000;
+}
+
+span {
+  color: rgb(220, 100, 56);
+}
+
+strong {
+  text-decoration: underline;
+}

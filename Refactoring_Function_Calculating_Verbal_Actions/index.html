@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+	<div id="wrapper">
+		<label>
+			Wpisz słownie działanie matematyczne i kliknij "<strong>Policz</strong>" lub naciśnij
+			"<strong>Enter</strong>":
+		</label>
+		<br />
+		<br />
+		<input type="text" id="inputText" placeholder="Tutaj wpisz działanie matematyczne wyrażone tylko słowami." />
+		<br />
+		<br />
+		<div id="buttonsWrapper">
+			<button type="button" id="buttonPolicz">Policz</button>
+			<button type="button" id="buttonResetuj">Resetuj</button>
+		</div>
+		<br />
+		<br />
+		<p type="text" id="pNumber">Wpisz działanie matematyczne w wyznaczonym polu.</p>
+		<br />
+		<br />
+		<br />
+		<br />
+		<span>Przykład prawidłowego wpisania działania matematycznego: <strong>dwa plus jeden razy dwa minus dwa
+				podzielić na cztery</strong>
+			<br />
+			<em>(tylko cyfry i liczby całkowite, tylko dodawanie, odejmowanie, mnożenie i dzielenie bez nawiasów, nie
+				mogą wystąpić dwie spacje obok siebie ani spacja lub inny znak na końcu, można stosować cyfry/liczby ujemne np. <strong>dwa minus dwa plus minus jeden)</strong>.</em>
+		</span>
+	</div>
+	<script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
