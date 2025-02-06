@@ -91,7 +91,8 @@ function main(data) {
   result = creatingWholeNumbersForValuesBiggerThan999(result);
   result = finalPreparationForCounting(result);
   result = setNegativeNumbers(result);
-  result = calculatedResult(result);
+  result = multiplicationAndDivisionOperations(result);
+  result = additionAndSubtractionOperations(result);
   console.log("Result from main() function:", result);
   result = displayResult(result);
   return result;
@@ -242,14 +243,8 @@ function setNegativeNumbers(dataFromLocalStorage) {
       (dataFromLocalStorage[0] == "*" && dataFromLocalStorage[1] == "-") ||
       (dataFromLocalStorage[0] == "/" && dataFromLocalStorage[1] == "-")
     ) {
-      let checkMinus =
-        dataFromLocalStorageValues[dataFromLocalStorageKeys[1]] +
-        dataFromLocalStorageValues[dataFromLocalStorageKeys[2]];
-      dataFromLocalStorage.splice(
-        dataFromLocalStorageKeys[2],
-        1,
-        Number(checkMinus)
-      );
+      let checkMinus = dataFromLocalStorageValues[dataFromLocalStorageKeys[1]] + dataFromLocalStorageValues[dataFromLocalStorageKeys[2]];
+      dataFromLocalStorage.splice(dataFromLocalStorageKeys[2], 1, Number(checkMinus));
       dataFromLocalStorage.splice(dataFromLocalStorageKeys[0], 1, 0);
     } else if (
       (dataFromLocalStorage[i] == "-" && dataFromLocalStorage[i - 1] == "+") ||
@@ -258,14 +253,8 @@ function setNegativeNumbers(dataFromLocalStorage) {
       (dataFromLocalStorage[i] == "-" && dataFromLocalStorage[i - 1] == "/") ||
       dataFromLocalStorage[0] == "-"
     ) {
-      let checkMinus =
-        dataFromLocalStorageValues[dataFromLocalStorageKeys[i]] +
-        dataFromLocalStorageValues[dataFromLocalStorageKeys[i + 1]];
-      dataFromLocalStorage.splice(
-        dataFromLocalStorageKeys[i + 1],
-        1,
-        Number(checkMinus)
-      );
+      let checkMinus = dataFromLocalStorageValues[dataFromLocalStorageKeys[i]] + dataFromLocalStorageValues[dataFromLocalStorageKeys[i + 1]];
+      dataFromLocalStorage.splice(dataFromLocalStorageKeys[i + 1], 1, Number(checkMinus));
       dataFromLocalStorage.splice(dataFromLocalStorageKeys[i], 1);
     }
   }
@@ -273,8 +262,27 @@ function setNegativeNumbers(dataFromLocalStorage) {
   return dataFromLocalStorage;
 }
 
-function calculatedResult(dataFromLocalStorage) {
-  let finalResult
+function multiplicationAndDivisionOperations(dataFromLocalStorage) {
+  let mulDivResult;
+  for (let i = 1; i < dataFromLocalStorage.length; i += 2) {
+    if (dataFromLocalStorage[i] === "*") {
+      let mulDivResult = dataFromLocalStorage[i - 1] * dataFromLocalStorage[i + 1];
+      dataFromLocalStorage[i - 1] = mulDivResult;
+      dataFromLocalStorage.splice(i, 2); // We remove the operator and the number after multiplication
+      i -= 2; // Go back to recheck the previous number
+    } else if (dataFromLocalStorage[i] === "/") {
+      let mulDivResult = dataFromLocalStorage[i - 1] / dataFromLocalStorage[i + 1];
+      dataFromLocalStorage[i - 1] = mulDivResult;
+      dataFromLocalStorage.splice(i, 2); // We remove the operator and the number after multiplication
+      i -= 2; // Go back to recheck the previous number
+    }
+  }
+  console.log(dataFromLocalStorage);
+  return dataFromLocalStorage;
+}
+
+function additionAndSubtractionOperations(dataFromLocalStorage) {
+  let finalResult;
   for (i = 0; i < dataFromLocalStorage.length; i++) {
     if (i == 0) {
       finalResult = dataFromLocalStorage[0];
@@ -286,14 +294,6 @@ function calculatedResult(dataFromLocalStorage) {
       case "-":
         finalResult = finalResult - dataFromLocalStorage[i + 1];
         break;
-      case "*":
-        finalResult = finalResult * dataFromLocalStorage[i + 1];
-        break;
-      case "/":
-        finalResult = finalResult / dataFromLocalStorage[i + 1];
-        break;
-      case "**":
-        result = Math.pow(dataFromLocalStorage[i - 1], dataFromLocalStorage[i]);
     }
   }
   console.log(finalResult);
@@ -301,5 +301,6 @@ function calculatedResult(dataFromLocalStorage) {
 }
 
 function displayResult(displayResult) {
-  document.getElementById("pNumber").innerHTML = "Wynik działania: " + displayResult;
+  document.getElementById("pNumber").innerHTML =
+    "Wynik działania: " + displayResult;
 }
