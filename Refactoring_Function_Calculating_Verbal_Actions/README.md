@@ -15,7 +15,7 @@
 <li>In the future, when I have time I will add, among other things, a try and catch structure and I will try to enclose some loops in functions/methods built into Java Script.</li>
 <li>Each function displays the effect of processing the entered data in the console - you can analyze it yourself.</li>
 <br/>
-<img width="959" alt="refactoring_function_calculating_verbal_actions_1" src="https://github.com/user-attachments/assets/405b0138-a34b-4e80-b8ef-9849b42f8e08" />
+<img width="960" alt="refactoring_function_calculating_verbal_actions_1" src="https://github.com/user-attachments/assets/fb6f2756-4d4a-452e-a583-93a92ab5639d" />
 </ul>
 
 <h1>Author:</h1>
